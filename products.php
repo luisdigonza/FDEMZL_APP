@@ -17,7 +17,7 @@ session_start();
 <body>
     <!-- upper-nav -->
     <div class="upper-nav primary-bg p-2 px-3 text-center text-break">
-        <span>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a>Shop Now</a></span>
+        <span>¡Celebra la Magia de Diciembre! Arreglos Florales Navideños y Entrega Exprés Gratuita - ¡Descuentos de hasta el 50%! <a>Compra Ahora</a></span>
     </div>
     <!-- upper-nav -->
     <!-- Start NavBar -->
@@ -33,32 +33,32 @@ session_start();
                         <a class="nav-link" href="./index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./products.php">Products</a>
+                        <a class="nav-link active" aria-current="page" href="./products.php">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Acerca</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#">Contáctanos</a>
                     </li>
                     <?php
                         if(isset($_SESSION['username'])){                            
                             echo "
                             <li class='nav-item'>
-                            <a class='nav-link' href='./users_area/profile.php'>My Account</a>
+                            <a class='nav-link' href='./users_area/profile.php'>Mi Cuenta</a>
                         </li>";
                         }
                         else{
                             echo "
                             <li class='nav-item'>
-                            <a class='nav-link' href='./users_area/user_registration.php'>Register</a>
+                            <a class='nav-link' href='./users_area/user_registration.php'>Registrarse</a>
                         </li>";
                         }
                     ?>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Buscar</button>
                 </form>
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -74,7 +74,7 @@ session_start();
                                 ?>
                             </sup>
                             <span class="d-none">
-                                Total Price is: 
+                                El precio total es: 
                                 <?php
                                 total_cart_price();
                                 ?>
@@ -90,11 +90,11 @@ session_start();
                             <?php
                                 if(!isset($_SESSION['username'])){
                                     echo "<span>
-                                    Welcome guest
+                                    Bienvenido, invitado
                                 </span>";
                             }else{
                                     echo "<span>
-                                    Welcome ".$_SESSION['username']. "</span>";
+                                    Bienvenido ".$_SESSION['username']. "</span>";
                                 }
                                 ?>
                         </a>
@@ -103,13 +103,13 @@ session_start();
                     if(!isset($_SESSION['username'])){
                         echo "<li class='nav-item'>
                         <a class='nav-link' href='./users_area/user_login.php'>
-                            Login
+                            Iniciar sesión
                         </a>
                     </li>";
                 }else{
                         echo "<li class='nav-item'>
                         <a class='nav-link' href='./users_area/logout.php'>
-                            Logout
+                            Cerrar sesión
                         </a>
                     </li>";
                     }

@@ -17,7 +17,7 @@ session_start();
 <body>
     <!-- upper-nav -->
     <div class="upper-nav primary-bg p-2 px-3 text-center text-break">
-        <span>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a>Shop Now</a></span>
+        <span>hola Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a>Shop Now</a></span>
     </div>
     <!-- upper-nav -->
     <!-- Start NavBar -->

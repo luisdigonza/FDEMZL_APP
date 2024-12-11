@@ -9,7 +9,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce Cart Details Page</title>
+    <title>Detalles del Carrito de Compras</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
@@ -17,7 +17,7 @@ session_start();
 <body>
     <!-- upper-nav -->
     <div class="upper-nav primary-bg p-2 px-3 text-center text-break">
-        <span>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a>Shop Now</a></span>
+        <span>¡Celebra la Magia de Diciembre! Arreglos Florales Navideños y Entrega Exprés Gratuita - ¡Descuentos de hasta el 50%! <a>Compra Ahora</a></span>
     </div>
     <!-- upper-nav -->
     <!-- Start NavBar -->
@@ -30,35 +30,35 @@ session_start();
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active"  href="./index.php">Home</a>
+                        <a class="nav-link active"  href="./index.php">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./products.php">Products</a>
+                        <a class="nav-link" aria-current="page" href="./products.php">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Acerca</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#">Contáctanos</a>
                     </li>
                     <?php
                         if(isset($_SESSION['username'])){                            
                             echo "
                             <li class='nav-item'>
-                            <a class='nav-link' href='./users_area/profile.php'>My Account</a>
+                            <a class='nav-link' href='./users_area/profile.php'>Mi Cuenta</a>
                         </li>";
                         }
                         else{
                             echo "
                             <li class='nav-item'>
-                            <a class='nav-link' href='./users_area/user_registration.php'>Register</a>
+                            <a class='nav-link' href='./users_area/user_registration.php'>Registrarse</a>
                         </li>";
                         }
                     ?>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Buscar</button>
                 </form>
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -90,11 +90,11 @@ session_start();
                             <?php
                                 if(!isset($_SESSION['username'])){
                                     echo "<span>
-                                    Welcome guest
+                                    Bienvenido, invitado
                                 </span>";
                             }else{
                                     echo "<span>
-                                    Welcome ".$_SESSION['username']. "</span>";
+                                    Bienvenido ".$_SESSION['username']. "</span>";
                                 }
                                 ?>
                         </a>
@@ -103,13 +103,13 @@ session_start();
                     if(!isset($_SESSION['username'])){
                         echo "<li class='nav-item'>
                         <a class='nav-link' href='./users_area/user_login.php'>
-                            Login
+                            Iniciar sesión
                         </a>
                     </li>";
                 }else{
                         echo "<li class='nav-item'>
                         <a class='nav-link' href='./users_area/logout.php'>
-                            Logout
+                            Cerrar sesión
                         </a>
                     </li>";
                     }
@@ -206,7 +206,7 @@ session_start();
                         <?php   }
                             }
                         }else{
-                            echo "<h2 class='text-center text-danger'>Cart is empty</h2>";
+                            echo "<h2 class='text-center text-danger'>El carrito está vacío</h2>";
                         }
                         ?>
                         </tbody>
@@ -222,7 +222,7 @@ session_start();
                             echo "
                         <h4>Sub-Total: <strong class='text-2'> $total_price</strong></h4>
                         
-                        <input type='submit' value='Continue Shopping' class='btn btn-dark' name='continue_shopping'>
+                        <input type='submit' value='Continue Shopping1' class='btn btn-dark' name='continue_shopping'>
                         <button class='btn btn-dark'><a class='text-light' href='./index.php'>Continue Shopping</a></button>
                         
                         <input type='submit' value='Checkout' class='btn btn-dark' name='checkout'>
