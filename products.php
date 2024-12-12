@@ -23,20 +23,22 @@ session_start();
     <!-- Start NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">A1</a>
+            <a class="navbar-brand fw-bold" href="./index.php">
+                <img src="./assets/images/logo.png" alt="Logo A1" style="height: 80px;">
+            </a>            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.php">Home</a>
+                        <a class="nav-link" href="./index.php">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./products.php">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca</a>
+                        <a class="nav-link" href="#">Acerca de</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contáctanos</a>
@@ -56,12 +58,12 @@ session_start();
                         }
                     ?>
                 </ul>
-                <form class="d-flex">
+                <!--<form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                     <button class="btn btn-outline-primary" type="submit">Buscar</button>
-                </form>
+                </form>-->
                 <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <!--<li class="nav-item">
                         <a class="nav-link" href="./cart.php"><svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M25 27C25.5523 27 26 26.5523 26 26C26 25.4477 25.5523 25 25 25C24.4477 25 24 25.4477 24 26C24 26.5523 24.4477 27 25 27Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -80,7 +82,7 @@ session_start();
                                 ?>
                             </span>
                         </a>
-                    </li>
+                    </li>-->
                     <li class="nav-item">
                         <a class="nav-link" class="d-flex align-items-center gap-1" href="#">
                             <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -128,32 +130,19 @@ session_start();
                 <div class="categ-header">
                     <div class="sub-title">
                         <span class="shape"></span>
-                        <span class="title">Categories & Brands</span>
+                        <span class="title">Productos</span>
                     </div>
-                    <h2>Browse By Category & Brand</h2>
+                    <h2>Explorar por categorías y etiquetas</h2>
                 </div>
                 <div class="row mx-0">
                     <div class="col-md-2 side-nav p-0">
                         <!-- side nav  -->
-                        <!-- brands to display -->
-                        <ul class="navbar-nav me-auto ">
-                            <li class="nav-item d-flex align-items-center gap-2">
-                                <span class="shape"></span>
-                                <a href="products.php" class="nav-link fw-bolder nav-title">
-                                    <h4>Brands</h4>
-                                </a>
-                            </li>
-                            <?php
-                            getBrands();
-                            ?>
-                        </ul>
-                        <div class="divider"></div>
                         <!-- categories to display -->
                         <ul class="navbar-nav me-auto ">
                             <li class="nav-item d-flex align-items-center gap-2">
                                 <span class="shape"></span>
                                 <a href="products.php" class="nav-link fw-bolder nav-title">
-                                    <h4>Categories</h4>
+                                    <h4>Categorias</h4>
                                 </a>
                             </li>
                             <?php
@@ -161,6 +150,21 @@ session_start();
                             ?>
 
                         </ul>
+                        <div class="divider"></div>
+                        <!-- brands to display -->
+                        <ul class="navbar-nav me-auto ">
+                            <li class="nav-item d-flex align-items-center gap-2">
+                                <span class="shape"></span>
+                                <a href="products.php" class="nav-link fw-bolder nav-title">
+                                    <h4>Etiquetas</h4>
+                                </a>
+                            </li>
+                            <?php
+                            getBrands();
+                            ?>
+                        </ul>
+                        
+
 
                     </div>
                     <div class="col-md-10">

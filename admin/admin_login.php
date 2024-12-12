@@ -9,7 +9,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce Admin Login</title>
+    <title>Inicio de sesión Admin - FDEDMZL</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.css" />
     <link rel="stylesheet" href="../assets/css/main.css" />
 </head>
@@ -19,30 +19,27 @@ session_start();
     <!-- Start Landing Section -->
     <div class="landing admin-register">
         <div class="">
-            <h2 class="text-center mb-1">Admin Login</h2>
-            <h4 class="text-center mb-3 fw-light">Login to your account</h4>
+            <h2 class="text-center mb-1">Inicio de sesión Admin - FDEMZL</h2>
+            <h4 class="text-center mb-3 fw-light">Inicie sesión con su cuenta</h4>
             <div class="row m-0 align-items-center">
                 <div class="col-md-6 p-0 d-none d-md-block">
-                    <img src="../assets/images/bgregister.png" class="admin-register" alt="Login photo">
+                    <img src="../assets/images/logo.png" class="admin-register" alt="Login photo">
                 </div>
                 <div class="col-md-6 py-4 px-5 d-flex flex-column gap-4">
                     <div>
                         <form action="" method="post" class="d-flex flex-column gap-4">
                             <div class="form-outline">
-                                <label for="username" class="form-label">Username</label>
-                                <input type="text" name="username" id="username" class="form-control" placeholder="Enter your username" required>
+                                <label for="username" class="form-label">Nombre de usuario</label>
+                                <input type="text" name="username" id="username" class="form-control" placeholder="Ingrese su nombre de usuario" required>
                             </div>
                             <div class="form-outline">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" name="password" id="password" class="form-control" placeholder="Enter your Password" required>
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" name="password" id="password" class="form-control" placeholder="Ingrese su contraseña" required>
                             </div>
                             <div class="form-outline">
-                                <a href="" class="text-2 text-decoration-underline">Forgot your passowrd?</a>
-                            </div>
-                            <div class="form-outline">
-                                <input type="submit" value="Login" class="btn btn-primary mb-3" name="admin_login">
+                                <input type="submit" value="Iniciar sesión" class="btn btn-primary mb-3" name="admin_login">
                                 <p class="small">
-                                    Don't have an account? <a href="./admin_resgistration.php" class="text-decoration-underline text-success fw-bold">Register</a>
+                                    ¿No tienes una cuenta? <a href="./admin_resgistration.php" class="text-decoration-underline text-success fw-bold">Registrar</a>
                                 </p>
                             </div>
                         </form>
@@ -58,9 +55,9 @@ session_start();
 
 
     <!-- Start Footer -->
-    <!-- <div class="upper-nav primary-bg p-2 px-3 text-center text-break">
-        <span>All CopyRight &copy;2023</span>
-    </div> -->
+    <footer class="footer upper-nav primary-bg p-2 px-3 text-center text-break">
+        <span>All CopyRight &copy;2024 - Flores y Detalles con Estilo Manizales.</span>
+    </footer>
     <!-- End Footer -->
 
     <script src="../assets/js/bootstrap.bundle.js"></script>

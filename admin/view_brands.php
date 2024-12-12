@@ -12,17 +12,17 @@
         <div class="categ-header">
             <div class="sub-title">
                 <span class="shape"></span>
-                <h2>All Brands</h2>
+                <h2>Lista Etiquetas</h2>
             </div>
         </div>
         <div class="table-data">
             <table class="table table-bordered table-hover table-striped text-center">
                 <thead class="table-dark">
                     <tr>
-                        <th>Brands No.</th>
-                        <th>Brands Title</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
+                        <th>No.</th>
+                        <th>Nombre</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
                     </tr>
                 </thead>
                 <tbody>

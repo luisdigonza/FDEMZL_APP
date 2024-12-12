@@ -19,32 +19,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce Admin Dashboard</title>
+    <title>Panel administrativo - FDEMZL</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.css" />
     <link rel="stylesheet" href="../assets/css/main.css" />
 </head>
 
 <body>
-    <!-- upper-nav -->
-    <div class="upper-nav primary-bg p-2 px-3 text-center text-break">
-        <span>Admin Dashboard And Free Express Delivery</span>
-    </div>
-    <!-- upper-nav -->
     <!-- Start NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">A1</a>
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="../assets/images/logo.png" alt="Logo A1" style="height: 80px;">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContentad" aria-controls="navbarSupportedContentad" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContentad">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Welcome <?php echo $admin_name;?></a>
+                        <a class="nav-link active" aria-current="page" href="#">Bienvenido <?php echo $admin_name;?></a>
                     </li>
                     <li class="nav-item">
                     <button class="btn btn-primary p-0 px-1">
-                            <a href="./admin_logout.php" class="nav-link text-light">Logout</a>
+                            <a href="./admin_logout.php" class="nav-link text-light">Cerrar sesión</a>
                         </button>
                     </li>
                 </ul>
@@ -59,9 +56,9 @@
             <div class="categ-header">
                 <div class="sub-title">
                     <span class="shape"></span>
-                    <span class="title">Admin Dashboard</span>
+                    <span class="title">Panel administrativo - Flores y Detalles con Estilo Manizales</span>
                 </div>
-                <h2>Manage Details Of Ecommerce</h2>
+                <h2>Gestionar detalles de la tienda</h2>
             </div>
             <div class="row align-items-center">
                 <div class="col-md-2">
@@ -73,31 +70,31 @@
                 <div class="col-md-10">
                     <div class="buttons">
                         <button class="btn btn-outline-primary m-2">
-                            <a href="./insert_product.php" class="nav-link">Insert Products</a>
+                            <a href="index.php?insert_product" class="nav-link">Añadir Productos</a>
                         </button>
                         <button class="btn btn-outline-primary m-2">
-                            <a href="index.php?view_products" class="nav-link">View Products</a>
+                            <a href="index.php?view_products" class="nav-link">Ver Productos</a>
                         </button>
                         <button class="btn btn-outline-primary m-2">
-                            <a href="index.php?insert_category" class="nav-link">Insert Categories</a>
+                            <a href="index.php?insert_category" class="nav-link">Añadir Categorias</a>
                         </button>
                         <button class="btn btn-outline-primary m-2">
-                            <a href="index.php?view_categories" class="nav-link">View Categories</a>
+                            <a href="index.php?view_categories" class="nav-link">Ver Categorias</a>
                         </button>
                         <button class="btn btn-outline-primary m-2">
-                            <a href="index.php?insert_brand" class="nav-link">Insert Brands</a>
+                            <a href="index.php?insert_brand" class="nav-link">Añadir Etiquetas</a>
                         </button>
                         <button class="btn btn-outline-primary m-2">
-                            <a href="index.php?view_brands" class="nav-link">View Brands</a>
+                            <a href="index.php?view_brands" class="nav-link">Ver Etiquetas</a>
+                        </button>
+                        <!--<button class="btn btn-outline-primary m-2">
+                            <a href="index.php?list_orders" class="nav-link">Ver todas las ordenes</a>
                         </button>
                         <button class="btn btn-outline-primary m-2">
-                            <a href="index.php?list_orders" class="nav-link">All Orders</a>
-                        </button>
+                            <a href="index.php?list_payments" class="nav-link">Ver todos los pagos</a>
+                        </button>-->
                         <button class="btn btn-outline-primary m-2">
-                            <a href="index.php?list_payments" class="nav-link">All Payments</a>
-                        </button>
-                        <button class="btn btn-outline-primary m-2">
-                            <a href="index.php?list_users" class="nav-link">List Users</a>
+                            <a href="index.php?list_users" class="nav-link">Lista Usuarios Administradores</a>
                         </button>
                     </div>
                 </div>
@@ -119,6 +116,9 @@
             }
             if(isset($_GET['insert_brand'])){
                 include('./insert_brands.php');
+            }
+            if(isset($_GET['insert_product'])){
+                include('./insert_product.php');
             }
             if(isset($_GET['view_products'])){
                 include('./view_products.php');
@@ -156,8 +156,8 @@
             if(isset($_GET['list_payments'])){
                 include('./list_payments.php');
             }
-            if(isset($_GET['delete_payment'])){
-                include('./delete_payment.php');
+            if(isset($_GET['delete_user'])){
+                include('./delete_user.php');
             }
             if(isset($_GET['list_users'])){
                 include('./list_users.php');
@@ -168,16 +168,10 @@
     </div>
     <!-- End Changed Page  -->
 
-
-
-
-
-
-
     <!-- Start Footer -->
-    <!-- <div class="upper-nav primary-bg p-2 px-3 text-center text-break">
-        <span>All CopyRight &copy;2023</span>
-    </div> -->
+    <div class="upper-nav primary-bg p-2 px-3 text-center text-break">
+        <span>All CopyRight &copy;2024 - Flores y Detalles con Estilo Manizales.</span>
+    </div>
     <!-- End Footer -->
 
     <script src="../assets/js/bootstrap.bundle.js"></script>

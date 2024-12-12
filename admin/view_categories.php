@@ -12,17 +12,17 @@
         <div class="categ-header">
             <div class="sub-title">
                 <span class="shape"></span>
-                <h2>All Categories</h2>
+                <h2>Lista Categorias</h2>
             </div>
         </div>
         <div class="table-data">
             <table class="table table-bordered table-hover table-striped text-center">
                 <thead class="table-dark">
                     <tr>
-                        <th>Categories No.</th>
-                        <th>Categories Title</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
+                        <th>No.</th>
+                        <th>Nombre</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -64,9 +64,9 @@
                                                         Do you really want to delete these records? this process cannot be done.
                                                     </p>
                                                     <div class='btns d-flex gap-3'>
-                                                        <button type='button' class='btn px-5 btn-secondary' data-bs-dismiss='modal'>Cancel</button>
+                                                        <button type='button' class='btn px-5 btn-secondary' data-bs-dismiss='modal'>Cancelar</button>
                                                         <button type='button' class='btn px-5 btn-primary' data-bs-dismiss='modal'>
-                                                            <a class='text-light' href='index.php?delete_brand=$category_id'>
+                                                            <a class='text-light' href='index.php?delete_category=$category_id'>
                                                                 Delete $category_title
                                                             </a>
                                                         </button>

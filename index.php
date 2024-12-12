@@ -23,8 +23,8 @@ session_start();
     <!-- Start NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">
-                <img src="./assets/images/logo.png" alt="Logo A1" style="height: 40px;">
+            <a class="navbar-brand fw-bold" href="./index.php">
+                <img src="./assets/images/logo.png" alt="Logo A1" style="height: 80px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -58,12 +58,8 @@ session_start();
                         }
                     ?>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-primary" type="submit">Buscar</button>
-                </form>
                 <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <!--<li class="nav-item">
                         <a class="nav-link" href="./cart.php"><svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M25 27C25.5523 27 26 26.5523 26 26C26 25.4477 25.5523 25 25 25C24.4477 25 24 25.4477 24 26C24 26.5523 24.4477 27 25 27Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -82,7 +78,7 @@ session_start();
                                 ?>
                             </span>
                         </a>
-                    </li>
+                    </li>-->
                     <li class="nav-item">
                         <a class="nav-link" class="d-flex align-items-center gap-1" href="#">
                             <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,24 +122,11 @@ session_start();
     <div class="landing">
         <div class="container">
             <div class="row m-0">
-                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 p-md-0 tabs-categ">
-                    <ul class="p-md-0 d-flex flex-column gap-3 pt-md-3">
-                        <li>Ramos para Mujeres &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></li>
-                        <li>Arreglos para Eventos</li>
-                        <li>Decoración Floral para el Hogar</li>
-                        <li>Plantas Aromáticas y Decorativas</li>
-                        <li>Flores para Jardinería y Exteriores</li>
-                        <li>Regalos Florales para Bebés</li>
-                        <li>Accesorios Florales y Decorativos</li>
-                        <li>Ramos para Hombres &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></li>
-
-                    </ul>
-                </div>
-                <div class="col-lg-9 col-md-9 d-none d-sm-none d-md-block pt-md-4">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-md-block pt-md-4">
                     <div class="cover">
-                        <span class="title">Hermosos Arreglos Florales</span>
-                        <span class="desc">Arreglos especiales<br />¡Sorprende a tus seres queridos!</span>
-                        <a href="#">Comprar ahora -></a>
+                        <span class="title">Flores y Detalles con Estilo Manizales<br/></span>
+                        <span class="desc">Flores con estilo<br/>¡Sorprende a tus seres queridos!</span>
+                        <a href="#">Comprar ahora</a>
                     </div>
                 </div>
             </div>
@@ -185,7 +168,7 @@ session_start();
                             </defs>
                         </svg>
                     </span>
-                    <span>Arreglo de Flores</span>
+                    <span>Ramos</span>
                 </div>
 
                 <div class="card">
@@ -221,7 +204,7 @@ session_start();
                             </defs>
                         </svg>
                     </span>
-                    <span>Arreglo Floral en Caja</span>
+                    <span>Ramos en Caja</span>
                 </div>
 
                 <div class="card">
@@ -293,7 +276,7 @@ session_start();
                             </defs>
                         </svg>
                     </span>
-                    <span>Ramo de Flores</span>
+                    <span>Ramo con frutas</span>
                 </div>
 
                 <div class="card">
@@ -327,7 +310,7 @@ session_start();
                             </defs>
                         </svg>
                     </span>
-                    <span>Eventos Florales</span>
+                    <span>Eventos</span>
                 </div>
             </div>
         </div>
@@ -337,11 +320,11 @@ session_start();
     <div class="adver">
         <div class="container">
             <div class="cover">
-                <span class="title">Categorías</span>
-                <span class="desc">Enhance Your<br />Music Experience</span>
+                <span class="title">Flores y Detalles con Estilo Manizales</span>
+                <span class="desc">Eventos con estilo<br />Cotiza tu evento</span>
 
                 <button onclick="location.href='#'">
-                    Buy Now!
+                    Cotizar ahora!
                 </button>
             </div>
         </div>
@@ -359,7 +342,7 @@ session_start();
             </div>
             <div class="row mb-3">
                 <?php
-                getProduct(3);
+                getProduct(6);
                 getIPAddress();
                 ?>
             </div>
@@ -369,18 +352,6 @@ session_start();
         </div>
     </div>
     <!-- End Products  -->
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!-- divider  -->
@@ -393,9 +364,9 @@ session_start();
 
 
     <!-- Start Footer -->
-    <!-- <div class="upper-nav primary-bg p-2 px-3 text-center text-break">
-        <span>All CopyRight &copy;2023</span>
-    </div> -->
+     <div class="upper-nav primary-bg p-2 px-3 text-center text-break">
+        <span>All CopyRight &copy;2024 - Flores y Detalles con Estilo Manizales.</span>
+    </div>
     <!-- End Footer -->
 
     <script src="./assets/js/bootstrap.bundle.js"></script>

@@ -30,7 +30,7 @@ session_start();
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link"  href="./index.php">Home</a>
+                        <a class="nav-link"  href="./index.php">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./products.php">Products</a>

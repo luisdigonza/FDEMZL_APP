@@ -50,23 +50,28 @@
     ?>
 <div class="container">
     <div class="row justify-content-center">
+    <div class="categ-header text-center mb-4">
+            <div class="sub-title">
+                    <span class="shape"></span>
+                    <h2>Editar producto</h2>
+                </div>
+        </div>
         <div class="col-md-6">
-            <h1 class="text-center mb-4">Edit Product</h1>
             <form action="" method="post" enctype="multipart/form-data" class="d-flex flex-column gap-3 mb-3">
                 <div class="form-outline">
-                    <label for="product_title" class="form-label">Product Title</label>
+                    <label for="product_title" class="form-label">Nombre producto</label>
                     <input type="text" name="product_title" id="product_title" class="form-control" required value="<?php echo $product_title;?>">
                 </div>
                 <div class="form-outline">
-                    <label for="product_description" class="form-label">Product Description</label>
+                    <label for="product_description" class="form-label">Descripción del producto</label>
                     <input type="text" name="product_description" id="product_description" class="form-control" required value="<?php echo $product_description;?>">
                 </div>
                 <div class="form-outline">
-                    <label for="product_keywords" class="form-label">Product Keywords</label>
+                    <label for="product_keywords" class="form-label">Palabras clave del producto</label>
                     <input type="text" name="product_keywords" id="product_keywords" class="form-control" required value="<?php echo $product_keywords;?>">
                 </div>
                 <div class="form-outline">
-                    <label for="product_category" class="form-label">Product Category</label>
+                    <label for="product_category" class="form-label">Categoria del producto</label>
                     <select name="product_category" id="product_category" class="form-select" required >
                         <?php
                         // fetch all category with selected
@@ -85,7 +90,7 @@
                     </select>
                 </div>
                 <div class="form-outline">
-                    <label for="product_brand" class="form-label">Product Category</label>
+                    <label for="product_brand" class="form-label">Etiqueta del producto</label>
                     <select name="product_brand" id="product_brand" class="form-select" required>
                         <?php
                         // fetch all brands with selected
@@ -104,32 +109,36 @@
                     </select>
                 </div>
                 <div class="form-outline">
-                    <label for="product_image_one" class="form-label">Product Image 1</label>
+                    <label for="product_price" class="form-label">Precio del producto</label>
+                    <input type="number" name="product_price" id="product_price" class="form-control" required value="<?php echo $product_price;?>">
+                </div>
+                <div class="form-outline">
+                    <input type="submit" value="Editar producto" class="btn btn-primary" name="update_product">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <form action="" method="post" enctype="multipart/form-data" class="d-flex flex-column gap-3 mb-3">
+                <div class="form-outline">
+                    <label for="product_image_one" class="form-label">1. Imagen del producto (Obligatoria)</label>
                     <div class="d-flex">
                         <input type="file" name="product_image_one" id="product_image_one" class="form-control" value="<?php echo $product_image_one_old;?>">
                         <img src="./product_images/<?php echo $product_image_one_old;?>" alt="<?php echo $product_title;?>" class="img-thumbnail" width="100px">
                     </div>
                 </div>
                 <div class="form-outline">
-                    <label for="product_image_two" class="form-label">Product Image 2</label>
+                    <label for="product_image_two" class="form-label">2. Imagen del producto</label>
                     <div class="d-flex">
                         <input type="file" name="product_image_two" id="product_image_two" class="form-control" value="<?php echo $product_image_two_old;?>">
                         <img src="./product_images/<?php echo $product_image_two_old;?>" alt="<?php echo $product_title;?>" class="img-thumbnail" width="100px">
                     </div>
                 </div>
                 <div class="form-outline">
-                    <label for="product_image_three" class="form-label">Product Image 3</label>
+                    <label for="product_image_three" class="form-label">3. Imagen del producto</label>
                     <div class="d-flex">
                         <input type="file" name="product_image_three" id="product_image_three" class="form-control" value="<?php echo $product_image_three_old;?>">
                         <img src="./product_images/<?php echo $product_image_three_old;?>" alt="<?php echo $product_title;?>" class="img-thumbnail" width="100px">
                     </div>
-                </div>
-                <div class="form-outline">
-                    <label for="product_price" class="form-label">Product Price</label>
-                    <input type="number" name="product_price" id="product_price" class="form-control" required value="<?php echo $product_price;?>">
-                </div>
-                <div class="form-outline text-center">
-                    <input type="submit" value="Update Product" class="btn btn-primary" name="update_product">
                 </div>
             </form>
         </div>

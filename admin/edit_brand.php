@@ -13,13 +13,13 @@
         $brand_title = $_POST['brand_title'];
         // check empty fields 
         if(empty($brand_title)){
-            echo "<script>window.alert('Please fill the field');</script>";
+            echo "<script>window.alert('Por favor rellene el campo');</script>";
         }else{
             // update query 
             $update_brand_query = "UPDATE `brands` SET brand_title='$brand_title' WHERE brand_id = $edit_id";
             $update_brand_result = mysqli_query($con,$update_brand_query);
             if($update_brand_result){
-                echo "<script>window.alert('Brand updated successfully');</script>";
+                echo "<script>window.alert('Etiqueta editada correctamente');</script>";
                 echo "<script>window.open('./index.php?view_brands','_self');</script>";
             }
         }
@@ -28,14 +28,14 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <h1 class="text-center mb-4">Edit Brand</h1>
+            <h1 class="text-center mb-4">Editar Etiqueta</h1>
             <form action="" method="post" enctype="multipart/form-data" class="d-flex flex-column gap-3 mb-3">
                 <div class="form-outline">
-                    <label for="brand_title" class="form-label">Product Title</label>
+                    <label for="brand_title" class="form-label">Nombre</label>
                     <input type="text" name="brand_title" id="brand_title" class="form-control" required value="<?php echo $brand_title;?>">
                 </div>
                 <div class="form-outline text-center">
-                    <input type="submit" value="Update Brand" class="btn btn-primary" name="update_brand">
+                    <input type="submit" value="Editar Etiqueta" class="btn btn-primary" name="update_brand">
                 </div>
             </form>
         </div>

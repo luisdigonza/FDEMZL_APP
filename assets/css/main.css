@@ -40,7 +40,7 @@ ul {
 }
 
 .primary-1 {
-  background-color: #ffffff;
+  background-color: #141313;
 }
 
 .primary-2 {
@@ -242,15 +242,18 @@ ul {
 */
 /* Start Landing Section  */
 .landing .container .row .cover {
-  background-image: url('../images/bg.png');
-  background-size: cover;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  align-items: flex-start;
-  padding: 40px;
-  color: white;
+  background-image: url('../images/4.jpg'); /* Imagen de fondo */
+  background-size: cover; /* Asegura que la imagen ocupe todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 100%; /* Altura total del viewport */
+  width: 100%; /* Ancho total */
+  display: flex; /* Flexbox para contenido interno */
+  flex-direction: column; /* Coloca elementos internos en columnas */
+  gap: 20px; /* Ajusta el espacio entre elementos internos */
+  align-items: flex-start; /* Alinea elementos internos al inicio */
+  padding: 40px; /* Espaciado interno */
+  color: rgb(83, 83, 83); /* Color del texto */
 }
 
 .landing .container .row .cover .desc {
@@ -258,7 +261,7 @@ ul {
 }
 
 .landing .container .row .cover a {
-  color: #ffffff;
+  color: rgb(83, 83, 83);
   text-decoration: underline;
 }
 
@@ -356,7 +359,7 @@ ul {
 }
 
 .adver .container .cover {
-  background-image: url('../images/bgsecond.png');
+  background-image: url('../images/bg.png');
   background-position: center;
   background-size: cover;
   height: 60vh;
@@ -365,12 +368,12 @@ ul {
   gap: 25px;
   align-items: flex-start;
   justify-content: center;
-  color: white;
+  color: rgb(83, 83, 83);
   padding: 70px;
 }
 
 .adver .container .cover .title {
-  color: #00ff66;
+  color: #db4444;
   font-weight: bold;
 }
 
@@ -385,7 +388,7 @@ ul {
 }
 
 .adver .container .cover button {
-  background-color: #00ff66;
+  background-color: #db4444;
   color: #ffffff;
   padding: 8px 25px;
   border: none;
