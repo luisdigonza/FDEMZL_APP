@@ -150,9 +150,9 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `product_title`, `product_description`, `product_keywords`, `category_id`, `brand_id`, `product_image_one`, `product_image_two`, `product_image_three`, `product_price`, `date`, `status`) VALUES
-(1, 'Matrimonio flores blancas', 'Matrimonio flores blancas', 'Matrimonio flores blancas', 13, 14, 'matrimonio.jpg', 'matrimonio.jpg', 'matrimonio.jpg', 350000, '2024-12-12 15:47:57', 'true'),
-(2, 'Ramo Girasoles', 'Ramo de girasoles redondo', 'girasoles', 10, 9, 'ramo_girasoles.jpg', 'ramo_girasoles.jpg', 'ramo_girasoles.jpg', 100000, '2024-12-12 15:47:45', 'true'),
-(3, 'Ramo de Rosas y Lirios', 'Ramo de Rosas y Lirios', 'Ramo de Rosas y Lirios', 9, 15, 'ramo_caja.jpg', 'ramo_caja.jpg', 'ramo_caja.jpg', 1600000, '2024-12-12 15:48:14', 'true');
+(1, 'Matrimonio flores blancas', 'Matrimonio flores blancas', 'Matrimonio flores blancas', 5, 1, 'matrimonio.jpg', 'matrimonio.jpg', 'matrimonio.jpg', 350000, '2024-12-12 15:47:57', 'true'),
+(2, 'Ramo Girasoles', 'Ramo de girasoles redondo', 'girasoles', 1, 3, 'ramo_girasoles.jpg', 'ramo_girasoles.jpg', 'ramo_girasoles.jpg', 100000, '2024-12-12 15:47:45', 'true'),
+(3, 'Ramo de Rosas y Lirios', 'Ramo de Rosas y Lirios', 'Ramo de Rosas y Lirios', 2, 2, 'ramo_caja.jpg', 'ramo_caja.jpg', 'ramo_caja.jpg', 1600000, '2024-12-12 15:48:14', 'true');
 -- --------------------------------------------------------
 
 --
