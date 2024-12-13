@@ -39,7 +39,7 @@ session_start();
                             <div class="form-outline">
                                 <input type="submit" value="Iniciar sesión" class="btn btn-primary mb-3" name="admin_login">
                                 <p class="small">
-                                    ¿No tienes una cuenta? <a href="./admin_resgistration.php" class="text-decoration-underline text-success fw-bold">Registrar</a>
+                                    ¿No tienes una cuenta? <a href="./admin_registration.php" class="text-decoration-underline text-success fw-bold">Registrar</a>
                                 </p>
                             </div>
                         </form>
