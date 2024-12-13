@@ -40,7 +40,7 @@ CREATE TABLE `admin_table` (
 --
 
 INSERT INTO `admin_table` (`admin_id`, `admin_name`, `admin_email`, `admin_image`, `admin_password`) VALUES
-(1, 'abdo', 'abdo@gmail.com', 'logo after 3d_2.png', '$2y$10$M/A/r5j/GSeJrAZxI8NtRu9eG5yNltfgTrfQVoClfSIF/pzNUXa2W');
+(1, 'adminFDEMZL', 'fdemzlapp@gmail.com', 'ramo_caja.jpg', '$2y$10$uyN2me.1jVbmMmyEB.J3XOCh35Sp9rA8SSCq.uYpAeIXSG3J2FvL2');
 
 -- --------------------------------------------------------
 
@@ -58,17 +58,9 @@ CREATE TABLE `brands` (
 --
 
 INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES
-(1, 'Canon'),
-(2, 'Lenovo'),
-(3, 'Nike'),
-(4, 'Dell'),
-(5, 'Polo'),
-(6, 'Hp'),
-(7, 'Apple'),
-(8, 'Oppo'),
-(9, 'Other'),
-(10, 'Samsung'),
-(13, 'Nokia');
+(1, 'Matrimonios'),
+(2, '15 años'),
+(3, 'Otras');
 
 -- --------------------------------------------------------
 
@@ -98,12 +90,12 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`category_id`, `category_title`) VALUES
-(1, 'Mobiles'),
-(2, 'Books'),
-(3, 'Food'),
-(4, 'Clothes'),
-(5, 'HeadPhones'),
-(6, 'Electronics'),
+(1, 'Ramos'),
+(2, 'Ramos de Caja'),
+(3, 'Bouquet de Flores'),
+(4, 'Ramos con Frutas'),
+(5, 'Eventos'),
+(6, 'Otras.'),
 (7, 'Accessories');
 
 -- --------------------------------------------------------
@@ -158,11 +150,9 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `product_title`, `product_description`, `product_keywords`, `category_id`, `brand_id`, `product_image_one`, `product_image_two`, `product_image_three`, `product_price`, `date`, `status`) VALUES
-(1, 'HAVIT HV-G92 Gamepad', 'allows you to use the familiar layout and buttons to enjoy console control when playing games on your PC The Havit HV-G92 also has multiple game profiles for pressure and controller settings', 'gamepad , havit , hv-g92 , logistech', 6, 9, 'havit1.png', 'havit2.png', 'havit1.png', 120, '2023-08-29 18:05:15', 'true'),
-(2, 'ASUS FHD Gaming Laptop', 'Laptop ASUS TUF Gaming F15 FX506HF-HN001W(11th Intel® Core™ i5 11400H - Ram 8GB - Hard 512 GB SSD - GPU Nvidia Geforce RTX™ 2050 4GB - Display 15.6 4k', 'Laptop , gaming , asus , intell 11', 6, 2, 'lap1.png', 'lap2.png', 'lap3.png', 700, '2023-10-25 02:06:58', 'true'),
-(3, 'CANON EOS DSLR Camera', 'High Image Quality with 32.5 Megapixel CMOS (APS-C) Sensor DIGIC 8 Image Processor. High-Speed Continuous Shooting of up to 10 fps with no Time Lag during OVF Shooting. 4K (UHD) 30fps / FHD 120fps Video', 'Canon, camera , high quality, 4k', 6, 1, 'camera1.png', 'camera2.png', 'camera3.png', 380, '2023-08-29 18:13:22', 'true'),
-(4, 'Breed Dry Dog Food', 'Chicken, chicken by-product meal, corn, wheat, chicken fat, ground grain sorghum, natural flavors, dried plain beet pulp, egg product, potassium chloride, sodium hexametaphosphate, salt, cat food, dog food', 'food, dog food, cat food', 3, 9, 'food1.png', 'food2.png', 'food3.png', 100, '2023-10-25 01:41:31', 'true');
-
+(1, 'Matrimonio flores blancas', 'Matrimonio flores blancas', 'Matrimonio flores blancas', 13, 14, 'matrimonio.jpg', 'matrimonio.jpg', 'matrimonio.jpg', 350000, '2024-12-12 15:47:57', 'true'),
+(2, 'Ramo Girasoles', 'Ramo de girasoles redondo', 'girasoles', 10, 9, 'ramo_girasoles.jpg', 'ramo_girasoles.jpg', 'ramo_girasoles.jpg', 100000, '2024-12-12 15:47:45', 'true'),
+(3, 'Ramo de Rosas y Lirios', 'Ramo de Rosas y Lirios', 'Ramo de Rosas y Lirios', 9, 15, 'ramo_caja.jpg', 'ramo_caja.jpg', 'ramo_caja.jpg', 1600000, '2024-12-12 15:48:14', 'true');
 -- --------------------------------------------------------
 
 --
