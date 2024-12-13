@@ -279,7 +279,7 @@ function viewDetails()
                         <div class='info d-flex flex-column gap-2'>
                             <h4 class='fw-bold'>$product_title</h4>
                             <div class='rates d-flex gap-2 flex-wrap'>
-                                <span>
+                                <!--<span>
                                     <svg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'>
                                         <path d='M14.673 7.17173C15.7437 6.36184 15.1709 4.65517 13.8284 4.65517H11.3992C10.7853 4.65517 10.243 4.25521 10.0617 3.66868L9.33754 1.32637C8.9309 0.0110567 7.0691 0.0110564 6.66246 1.32637L5.93832 3.66868C5.75699 4.25521 5.21469 4.65517 4.60078 4.65517H2.12961C0.791419 4.65517 0.215919 6.35274 1.27822 7.16654L3.39469 8.78792C3.85885 9.1435 4.05314 9.75008 3.88196 10.3092L3.11296 12.8207C2.71416 14.1232 4.22167 15.1704 5.30301 14.342L7.14861 12.9281C7.65097 12.5432 8.34903 12.5432 8.85139 12.9281L10.6807 14.3295C11.7636 15.159 13.2725 14.1079 12.8696 12.8046L12.09 10.2827C11.9159 9.71975 12.113 9.10809 12.5829 8.75263L14.673 7.17173Z' fill='#FFAD33' />
                                     </svg>
@@ -303,7 +303,7 @@ function viewDetails()
                                 <span>|</span>
                                 <span class='in-stack fw-bold'>
                                     In Stock
-                                </span>
+                                </span>-->
                             </div>
                             <h4>
                                 \$$product_price
@@ -314,17 +314,8 @@ function viewDetails()
                             <div class='divider'>
                             </div>
                             <form action='products.php?add_to_cart=$product_id'>
-                                <div class='buy-item d-flex gap-3 justify-content-center align-items-center'>
-                                    <div class='num-btns d-flex gap-1'>
-                                        <button type='button' class='btn btn-increase' onclick='increaseValueBtn()'>+</button>
-                                        <input type='number' class='form-control' name='num_of_items' id='num_of_items' value='1'>
-                                        <input type='hidden' class='form-control' name='add_to_cart' id='add_to_cart' value='$product_id'/>
-                                        <!-- <span class='num-of-items'>3</span> -->
-                                        <button type='button' class='btn btn-decrease' onclick='decreaseValueBtn()'> -</button>
-                                    </div>
-                                    <div>
-                                        <input type='submit' class='btn btn-primary' value='Buy Now'>
-                                    </div>
+                                <div>
+                                    <input type='submit' class='btn btn-primary' value='Cotizar ahora'>
                                 </div>
                             </form>
                             <div class='delivery d-flex flex-column my-4 gap-3'>
@@ -348,29 +339,10 @@ function viewDetails()
                                         </svg>
                                     </span>
                                     <div class='d-flex flex-column gap-2'>
-                                        <h6>Free Delivery</h6>
-                                        <span>Enter your postal code for Delivery Availability</span>
+                                        <h6>Si estas en Manizales los domicilios son gratis</h6>
                                     </div>
                                 </div>
-                                <div class='d-flex gap-2 align-items-center'>
-                                    <span>
-                                        <svg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                                            <g clip-path='url(#clip0_261_4865)'>
-                                                <path d='M33.3327 18.3334C32.9251 15.4004 31.5645 12.6828 29.4604 10.5992C27.3564 8.51557 24.6256 7.18155 21.6888 6.80261C18.752 6.42366 15.7721 7.02082 13.208 8.5021C10.644 9.98337 8.6381 12.2666 7.49935 15M6.66602 8.33335V15H13.3327' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
-                                                <path d='M6.66602 21.6667C7.07361 24.5997 8.43423 27.3173 10.5383 29.4009C12.6423 31.4845 15.3731 32.8185 18.3099 33.1974C21.2467 33.5764 24.2266 32.9792 26.7907 31.4979C29.3547 30.0167 31.3606 27.7335 32.4994 25M33.3327 31.6667V25H26.666' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' />
-                                            </g>
-                                            <defs>
-                                                <clipPath id='clip0_261_4865'>
-                                                    <rect width='40' height='40' fill='white' />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </span>
-                                    <div class='d-flex flex-column gap-2'>
-                                        <h6>Return Delivery</h6>
-                                        <span>Free 30 Days Delivery Returns. Details</span>
-                                    </div>
-                                </div>
+            
                             </div>
                         </div>
                     </div>

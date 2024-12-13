@@ -43,7 +43,7 @@ session_start();
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contáctanos</a>
                     </li>
-                    <?php
+                    <!--<?php
                         if(isset($_SESSION['username'])){                            
                             echo "
                             <li class='nav-item'>
@@ -56,7 +56,7 @@ session_start();
                             <a class='nav-link' href='./users_area/user_registration.php'>Registrar</a>
                         </li>";
                         }
-                    ?>
+                    ?>-->
                 </ul>
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <!--<li class="nav-item">
@@ -88,13 +88,13 @@ session_start();
                             <?php
                                 if(!isset($_SESSION['username'])){
                                     echo "<span>
-                                    Bienvenido, invitado
+                                    Bienvenido
                                 </span>";
                             }else{
                                     echo "<span>
-                                    Bienvenido ".$_SESSION['username']. "</span>";
+                                    Bienvenido <!--".$_SESSION['username']. "</span>";
                                 }
-                                ?>
+                            ?>
                         </a>
                     </li>
                     <?php

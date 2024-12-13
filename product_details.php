@@ -17,13 +17,15 @@ session_start();
 <body>
     <!-- upper-nav -->
     <div class="upper-nav primary-bg p-2 px-3 text-center text-break">
-        <span>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <a>Shop Now</a></span>
+        <span>¡Celebra la Magia de Diciembre! Arreglos Florales Navideños y Entrega Exprés Gratuita - ¡Descuentos de hasta el 50%! <a>Compra Ahora</a></span>
     </div>
     <!-- upper-nav -->
     <!-- Start NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#">A1</a>
+            <a class="navbar-brand fw-bold" href="./index.php">
+                <img src="./assets/images/logo.png" alt="Logo A1" style="height: 80px;">
+            </a>            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,15 +35,15 @@ session_start();
                         <a class="nav-link"  href="./index.php">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./products.php">Products</a>
+                        <a class="nav-link active" aria-current="page" href="./products.php">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Acerca de</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#">Contacto</a>
                     </li>
-                    <?php
+                    <!--<?php
                         if(isset($_SESSION['username'])){                            
                             echo "
                             <li class='nav-item'>
@@ -54,14 +56,14 @@ session_start();
                             <a class='nav-link' href='./users_area/user_registration.php'>Register</a>
                         </li>";
                         }
-                    ?>
+                    ?>-->
                 </ul>
-                <form class="d-flex">
+                <!--<form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-primary" type="submit">Search</button>
-                </form>
+                </form>-->
                 <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <!--<li class="nav-item">
                         <a class="nav-link" href="./cart.php"><svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11 27C11.5523 27 12 26.5523 12 26C12 25.4477 11.5523 25 11 25C10.4477 25 10 25.4477 10 26C10 26.5523 10.4477 27 11 27Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M25 27C25.5523 27 26 26.5523 26 26C26 25.4477 25.5523 25 25 25C24.4477 25 24 25.4477 24 26C24 26.5523 24.4477 27 25 27Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -80,7 +82,7 @@ session_start();
                                 ?>
                             </span>
                         </a>
-                    </li>
+                    </li>-->
                     <li class="nav-item">
                         <a class="nav-link" class="d-flex align-items-center gap-1" href="#">
                             <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,16 +92,16 @@ session_start();
                             <?php
                                 if(!isset($_SESSION['username'])){
                                     echo "<span>
-                                    Welcome guest
+                                    Bienvenido
                                 </span>";
                             }else{
                                     echo "<span>
-                                    Welcome ".$_SESSION['username']. "</span>";
+                                    Bienvenido ".$_SESSION['username']. "</span>";
                                 }
-                                ?>
+                            ?>
                         </a>
                     </li>
-                    <?php
+                    <!--<?php
                     if(!isset($_SESSION['username'])){
                         echo "<li class='nav-item'>
                         <a class='nav-link' href='./users_area/user_login.php'>
@@ -113,7 +115,7 @@ session_start();
                         </a>
                     </li>";
                     }
-                    ?>
+                    ?>-->
                 </ul>
             </div>
         </div>
@@ -125,9 +127,8 @@ session_start();
     <div class="prod-details">
         <div class="container">
             <div class="sub-container pt-4 pb-4">
-
                 <?php
-                viewDetails();
+                    viewDetails();
                 ?>
             </div>
         </div>
@@ -140,31 +141,22 @@ session_start();
             <div class="categ-header">
                 <div class="sub-title">
                     <span class="shape"></span>
-                    <span class="title">Related Products</span>
+                    <span class="title">Nuestros Productos</span>
                 </div>
-                <h2>Discover More Products</h2>
+                <h2>Conozca nuestros productos</h2>
             </div>
             <div class="row mb-3">
                 <?php
                 getProduct(3);
-                cart();
+                getIPAddress();
                 ?>
             </div>
             <div class="view d-flex justify-content-center align-items-center">
-                <button onclick="location.href='./products.php'">View More Products</button>
+                <button onclick="location.href='./products.php'">Ver Todos Los Productos</button>
             </div>
         </div>
     </div>
     <!-- End Products  -->
-
-
-
-
-
-
-
-
-
 
 
     <!-- divider  -->
@@ -177,9 +169,9 @@ session_start();
 
 
     <!-- Start Footer -->
-    <!-- <div class="upper-nav primary-bg p-2 px-3 text-center text-break">
-        <span>All CopyRight &copy;2023</span>
-    </div> -->
+    <div class="upper-nav primary-bg p-2 px-3 text-center text-break">
+        <span>All CopyRight &copy;2024 - Flores y Detalles con Estilo Manizales.</span>
+    </div>
     <!-- End Footer -->
 
     <script src="./assets//js/bootstrap.bundle.js"></script>
