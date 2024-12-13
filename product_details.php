@@ -38,10 +38,10 @@ session_start();
                         <a class="nav-link active" aria-current="page" href="./products.php">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca de</a>
+                        <a class="nav-link" href="./about.php">Acerca de</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="./contact.php">Contáctame</a>
                     </li>
                     <!--<?php
                         if(isset($_SESSION['username'])){                            
@@ -92,11 +92,11 @@ session_start();
                             <?php
                                 if(!isset($_SESSION['username'])){
                                     echo "<span>
-                                    Bienvenido
+                                    ¡Bienvenido/a!
                                 </span>";
                             }else{
                                     echo "<span>
-                                    Bienvenido ".$_SESSION['username']. "</span>";
+                                    ¡Bienvenido/a! <!--".$_SESSION['username']. "</span>";
                                 }
                             ?>
                         </a>
@@ -160,17 +160,14 @@ session_start();
 
 
     <!-- divider  -->
-    <!-- <div class="container">
+    <div class="container">
         <div class="divider"></div>
-    </div> -->
+    </div>
     <!-- divider  -->
 
-
-
-
     <!-- Start Footer -->
-    <div class="upper-nav primary-bg p-2 px-3 text-center text-break">
-        <span>All CopyRight &copy;2024 - Flores y Detalles con Estilo Manizales.</span>
+     <div class="upper-nav primary-bg p-2 px-3 text-center text-break">
+        <span>Todo con derechos de autor&copy;2024 - Flores y Detalles con Estilo Manizales.</span>
     </div>
     <!-- End Footer -->
 

@@ -9,7 +9,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo - FDEMZL</title>
+    <title>Contáctanos - FDEMZL</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
@@ -36,13 +36,13 @@ session_start();
                         <a class="nav-link" href="./index.php">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./products.php">Productos</a>
+                        <a class="nav-link" href="./products.php">Productos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./about.php">Acerca de</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contact.php">Contáctanos</a>
+                        <a class="nav-link active" aria-current="page" href="./contact.php">Contáctanos</a>
                     </li>
                     <!--<?php
                         if(isset($_SESSION['username'])){                            
@@ -119,68 +119,42 @@ session_start();
     </nav>
     <!-- End NavBar -->
 
-
-    <!-- Start All Prodcuts  -->
-    <div class="all-prod">
-        <div class="container">
-            <div class="sub-container pt-4 pb-4">
-                <div class="categ-header">
-                    <div class="sub-title">
-                        <span class="shape"></span>
-                        <span class="title">Productos</span>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Envíanos un mensaje</h3>
+                <form action="process_contact.php" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
                     </div>
-                    <h2>Explorar por categorías y etiquetas</h2>
-                </div>
-                <div class="row mx-0">
-                    <div class="col-md-2 side-nav p-0">
-                        <!-- side nav  -->
-                        <!-- categories to display -->
-                        <ul class="navbar-nav me-auto ">
-                            <li class="nav-item d-flex align-items-center gap-2">
-                                <span class="shape"></span>
-                                <a href="products.php" class="nav-link fw-bolder nav-title">
-                                    <h4>Categorias</h4>
-                                </a>
-                            </li>
-                            <?php
-                            getCategories();
-                            ?>
-
-                        </ul>
-                        <div class="divider"></div>
-                        <!-- brands to display -->
-                        <ul class="navbar-nav me-auto ">
-                            <li class="nav-item d-flex align-items-center gap-2">
-                                <span class="shape"></span>
-                                <a href="products.php" class="nav-link fw-bolder nav-title">
-                                    <h4>Etiquetas</h4>
-                                </a>
-                            </li>
-                            <?php
-                            getBrands();
-                            ?>
-                        </ul>
-                        
-
-
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
-                    <div class="col-md-10">
-                        <!-- products  -->
-                        <div class="row">
-                            <?php
-                            getProduct();
-                            filterCategoryProduct();
-                            filterBrandProduct();
-                            $ip=getIPAddress();
-                            cart();
-                            ?>
-                        </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                     </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3>Información de Contacto</h3>
+                <ul class="list-unstyled">
+                    <li><strong>Dirección:</strong> Calle 44 #23-107 Manizales, Caldas.</li>
+                    <li><strong>Teléfono:</strong> +57 311-793-9103, +57 320-644-5322</li>
+                    <li><strong>Email:</strong> admin@floresydetallesconestilomzl.com</li>
+                    <li><strong>Horario de apertura:</strong> Lunes a Sabado: 9:00 AM a 8:00 PM</li>
+                </ul>
+                <div class="mt-3">
+                    <h4>Encuéntranos en el mapa:</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1446.2789901307551!2d-75.50342538140319!3d5.06473247212777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e476f8b40f70f69%3A0xe62e9307928d6a6a!2sCl.%2044%20%2323-107%2C%20Manizales%2C%20Caldas!5e0!3m2!1ses!2sco!4v1715967427051!5m2!1ses!2sco" 
+                        width="100%" height="300" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End All Prodcuts  -->
 
     <!-- divider  -->
     <div class="container">
@@ -190,7 +164,7 @@ session_start();
 
     <!-- Start Footer -->
      <div class="upper-nav primary-bg p-2 px-3 text-center text-break">
-        <span>Todo con derechos de autor&copy;2024 - Flores y Detalles con Estilo Manizales.</span>
+        <span>Todo los derechos de autor&copy;2024 - Flores y Detalles con Estilo Manizales.</span>
     </div>
     <!-- End Footer -->
 

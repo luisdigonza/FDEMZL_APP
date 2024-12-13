@@ -9,7 +9,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo - FDEMZL</title>
+    <title>Acerca de FDEMZL</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
@@ -32,14 +32,14 @@ session_start();
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                <li class="nav-item">
                         <a class="nav-link" href="./index.php">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./products.php">Productos</a>
+                        <a class="nav-link" href="./products.php">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./about.php">Acerca de</a>
+                        <a class="nav-link active" aria-current="page" href="./about.php">Acerca de</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./contact.php">Contáctanos</a>
@@ -105,7 +105,7 @@ session_start();
                             Iniciar sesión
                         </a>
                     </li>";
-                }else{
+                    }else{
                         echo "<li class='nav-item'>
                         <a class='nav-link' href='./users_area/logout.php'>
                             Cerrar sesión
@@ -119,68 +119,34 @@ session_start();
     </nav>
     <!-- End NavBar -->
 
-
-    <!-- Start All Prodcuts  -->
-    <div class="all-prod">
-        <div class="container">
-            <div class="sub-container pt-4 pb-4">
-                <div class="categ-header">
-                    <div class="sub-title">
-                        <span class="shape"></span>
-                        <span class="title">Productos</span>
-                    </div>
-                    <h2>Explorar por categorías y etiquetas</h2>
-                </div>
-                <div class="row mx-0">
-                    <div class="col-md-2 side-nav p-0">
-                        <!-- side nav  -->
-                        <!-- categories to display -->
-                        <ul class="navbar-nav me-auto ">
-                            <li class="nav-item d-flex align-items-center gap-2">
-                                <span class="shape"></span>
-                                <a href="products.php" class="nav-link fw-bolder nav-title">
-                                    <h4>Categorias</h4>
-                                </a>
-                            </li>
-                            <?php
-                            getCategories();
-                            ?>
-
-                        </ul>
-                        <div class="divider"></div>
-                        <!-- brands to display -->
-                        <ul class="navbar-nav me-auto ">
-                            <li class="nav-item d-flex align-items-center gap-2">
-                                <span class="shape"></span>
-                                <a href="products.php" class="nav-link fw-bolder nav-title">
-                                    <h4>Etiquetas</h4>
-                                </a>
-                            </li>
-                            <?php
-                            getBrands();
-                            ?>
-                        </ul>
-                        
-
-
-                    </div>
-                    <div class="col-md-10">
-                        <!-- products  -->
-                        <div class="row">
-                            <?php
-                            getProduct();
-                            filterCategoryProduct();
-                            filterBrandProduct();
-                            $ip=getIPAddress();
-                            cart();
-                            ?>
-                        </div>
-                    </div>
-                </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Nuestra Historia</h3>
+                <p>
+                    Somos una empresa dedicada a ofrecer los mejores arreglos florales con estilo y calidad.
+                    Con más de 15 años de experiencia, trabajamos para sorprender a tus seres queridos en cada ocasión especial.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="assets/images/logo.png" alt="Acerca de nosotros" class="img-fluid rounded">
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4 text-center">
+                <h4>Misión</h4>
+                <p>Brindar alegría y estilo a través de arreglos florales únicos.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h4>Visión</h4>
+                <p>Ser la empresa líder en arreglos florales personalizados en la región.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h4>Valores</h4>
+                <p>Calidad, creatividad, y compromiso con nuestros clientes.</p>
             </div>
         </div>
     </div>
-    <!-- End All Prodcuts  -->
 
     <!-- divider  -->
     <div class="container">

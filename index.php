@@ -38,10 +38,10 @@ session_start();
                         <a class="nav-link" href="./products.php">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca</a>
+                        <a class="nav-link" href="./about.php">Acerca de</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contáctanos</a>
+                        <a class="nav-link" href="./contact.php">Contáctanos</a>
                     </li>
                     <!--<?php
                         if(isset($_SESSION['username'])){                            
@@ -88,16 +88,16 @@ session_start();
                             <?php
                                 if(!isset($_SESSION['username'])){
                                     echo "<span>
-                                    Bienvenido
+                                    ¡Bienvenido/a!
                                 </span>";
                             }else{
                                     echo "<span>
-                                    Bienvenido <!--".$_SESSION['username']. "</span>";
+                                    ¡Bienvenido/a! <!--".$_SESSION['username']. "</span>";
                                 }
                             ?>
                         </a>
                     </li>
-                    <?php
+                    <!--<?php
                     if(!isset($_SESSION['username'])){
                         echo "<li class='nav-item'>
                         <a class='nav-link' href='./users_area/user_login.php'>
@@ -111,7 +111,7 @@ session_start();
                         </a>
                     </li>";
                     }
-                    ?>
+                    ?>-->
                 </ul>
             </div>
         </div>
@@ -126,7 +126,7 @@ session_start();
                     <div class="cover">
                         <span class="title">Flores y Detalles con Estilo Manizales<br/></span>
                         <span class="desc">Flores con estilo<br/>¡Sorprende a tus seres queridos!</span>
-                        <a href="#">Comprar ahora</a>
+                        <a href="#">Cotizar ahora</a>
                     </div>
                 </div>
             </div>
@@ -168,7 +168,7 @@ session_start();
                             </defs>
                         </svg>
                     </span>
-                    <span>Ramos</span>
+                    <a href="./products.php?category=9"><span>Ramos</span></a>
                 </div>
 
                 <div class="card">
@@ -204,7 +204,7 @@ session_start();
                             </defs>
                         </svg>
                     </span>
-                    <span>Ramos en Caja</span>
+                    <a href="./products.php?category=10"><span>Ramos en Caja</span></a>
                 </div>
 
                 <div class="card">
@@ -243,7 +243,7 @@ session_start();
                             </defs>
                         </svg>
                     </span>
-                    <span>Bouquet de Flores</span>
+                    <a href="./products.php?category=11"><span>Bouquet de Flores</span></a>
                 </div>
 
                 <div class="card">
@@ -276,7 +276,7 @@ session_start();
                             </defs>
                         </svg>
                     </span>
-                    <span>Ramo con frutas</span>
+                    <a href="./products.php?category=12"><span>Ramo con frutas</span><a>
                 </div>
 
                 <div class="card">
@@ -310,7 +310,7 @@ session_start();
                             </defs>
                         </svg>
                     </span>
-                    <span>Eventos</span>
+                    <a href="./products.php?category=13"><span>Eventos</span></a>
                 </div>
             </div>
         </div>
@@ -355,17 +355,14 @@ session_start();
 
 
     <!-- divider  -->
-    <!-- <div class="container">
+    <div class="container">
         <div class="divider"></div>
-    </div> -->
+    </div>
     <!-- divider  -->
-
-
-
 
     <!-- Start Footer -->
      <div class="upper-nav primary-bg p-2 px-3 text-center text-break">
-        <span>All CopyRight &copy;2024 - Flores y Detalles con Estilo Manizales.</span>
+        <span>Todo con derechos de autor&copy;2024 - Flores y Detalles con Estilo Manizales.</span>
     </div>
     <!-- End Footer -->
 
