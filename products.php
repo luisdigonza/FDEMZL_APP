@@ -194,7 +194,8 @@ session_start();
     </div>
     <!-- End Footer -->
 
-    <script src="./assets//js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>

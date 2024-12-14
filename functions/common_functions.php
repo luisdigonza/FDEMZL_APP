@@ -20,24 +20,22 @@ function getProduct($numToDisplay = '')
                 $brand_id = $row['brand_id'];
                 echo "
         <div class='col-md-4 mb-2'>
-        <div class='one-card'>
-            <div class='photo'>
-                <img src='./admin/product_images/$product_image_one' alt='$product_title'>
-                <button>
-                    <a class='text-light' href='products.php?add_to_cart=$product_id'>Cotizar ahora</a>
-                </button>
-                <button>
-                    <a class='text-light' href='product_details.php?product_id=$product_id'>Ver mas</a>
-                </button>
-            </div>
-            <div class='content'>
-                <span class='title fw-bold'>$product_title</span>
-                <div class='desc'>
-                    <span>\$$product_price</span>
+            <div class='one-card'>
+                <div class='photo'>
+                    <img src='./admin/product_images/$product_image_one' alt='$product_title'>
+                    <button class='cotizarBtn btn btn-primary text-light' data-product=$product_title'>Cotizar ahora</button>
+                    <button>
+                        <a class='text-light' href='product_details.php?product_id=$product_id'>Ver mas</a>
+                    </button>
+                </div>
+                <div class='content'>
+                    <span class='title fw-bold'>$product_title</span>
+                    <div class='desc'>
+                        <span>\$$product_price</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
         ";
             }
         }
@@ -70,9 +68,7 @@ function filterCategoryProduct()
         <div class='one-card'>
             <div class='photo'>
                 <img src='./admin/product_images/$product_image_one' alt='$product_title'>
-                <button>
-                <a class='text-light' href='products.php?add_to_cart=$product_id'>Cotizar ahora</a>
-            </button>
+                <button class='cotizarBtn btn btn-primary text-light' data-product=$product_title'>Cotizar ahora</button>
             <button>
                 <a class='text-light' href='product_details.php?product_id=$product_id'>Ver mas</a>
             </button>
@@ -116,9 +112,7 @@ function filterBrandProduct()
         <div class='one-card'>
             <div class='photo'>
                 <img src='./admin/product_images/$product_image_one' alt='$product_title'>
-                <button>
-                <a class='text-light' href='products.php?add_to_cart=$product_id'>Cotizar ahora</a>
-            </button>
+                <button class='cotizarBtn btn btn-primary text-light' data-product=$product_title'>Cotizar ahora</button>
             <button>
                 <a class='text-light' href='product_details.php?product_id=$product_id'>Ver mas</a>
             </button>
@@ -313,11 +307,7 @@ function viewDetails()
                             </p>
                             <div class='divider'>
                             </div>
-                            <form action='products.php?add_to_cart=$product_id'>
-                                <div>
-                                    <input type='submit' class='btn btn-primary' value='Cotizar ahora'>
-                                </div>
-                            </form>
+                            <button class='cotizarBtn btn btn-primary' data-product=$product_title'>Cotizar ahora</button>
                             <div class='delivery d-flex flex-column my-4 gap-3'>
                                 <div class='d-flex gap-2 align-items-center'>
                                     <span>

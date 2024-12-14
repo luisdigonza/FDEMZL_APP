@@ -126,7 +126,7 @@ session_start();
                     <div class="cover">
                         <span class="title">Flores y Detalles con Estilo Manizales<br/></span>
                         <span class="desc">Flores con estilo<br/>¡Sorprende a tus seres queridos!</span>
-                        <a href="#">Cotizar ahora</a>
+                        <a href="#" class="cotizarBtn">Cotizar ahora</a>
                     </div>
                 </div>
             </div>
@@ -168,7 +168,7 @@ session_start();
                             </defs>
                         </svg>
                     </span>
-                    <a href="./products.php?category=9"><span>Ramos</span></a>
+                    <a href="./products.php?category=1"><span>Ramos</span></a>
                 </div>
 
                 <div class="card">
@@ -204,7 +204,7 @@ session_start();
                             </defs>
                         </svg>
                     </span>
-                    <a href="./products.php?category=10"><span>Ramos en Caja</span></a>
+                    <a href="./products.php?category=2"><span>Ramos en Caja</span></a>
                 </div>
 
                 <div class="card">
@@ -243,7 +243,7 @@ session_start();
                             </defs>
                         </svg>
                     </span>
-                    <a href="./products.php?category=11"><span>Bouquet de Flores</span></a>
+                    <a href="./products.php?category=3"><span>Bouquet de Flores</span></a>
                 </div>
 
                 <div class="card">
@@ -276,7 +276,7 @@ session_start();
                             </defs>
                         </svg>
                     </span>
-                    <a href="./products.php?category=12"><span>Ramo con frutas</span><a>
+                    <a href="./products.php?category=4"><span>Ramo con frutas</span><a>
                 </div>
 
                 <div class="card">
@@ -310,7 +310,7 @@ session_start();
                             </defs>
                         </svg>
                     </span>
-                    <a href="./products.php?category=13"><span>Eventos</span></a>
+                    <a href="./products.php?category=5"><span>Eventos</span></a>
                 </div>
             </div>
         </div>
@@ -323,7 +323,7 @@ session_start();
                 <span class="title">Flores y Detalles con Estilo Manizales</span>
                 <span class="desc">Eventos con estilo<br />Cotiza tu evento</span>
 
-                <button onclick="location.href='#'">
+                <button class="cotizarBtn">
                     Cotizar ahora!
                 </button>
             </div>
@@ -366,6 +366,7 @@ session_start();
     </div>
     <!-- End Footer -->
 
+    <script src="./assets/js/script.js"></script>
     <script src="./assets/js/bootstrap.bundle.js"></script>
 </body>
 

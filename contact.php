@@ -123,7 +123,7 @@ session_start();
         <div class="row">
             <div class="col-md-6">
                 <h3>Envíanos un mensaje</h3>
-                <form action="process_contact.php" method="POST">
+                <form id="contactForm">
                     <div class="mb-3">
                         <label for="name" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="name" name="name" required>
@@ -136,7 +136,7 @@ session_start();
                         <label for="message" class="form-label">Mensaje</label>
                         <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="button" class="sendToWhatsApp btn btn-primary" id="sendToWhatsApp">Enviar a WhatsApp</button>
                 </form>
             </div>
             <div class="col-md-6">
@@ -168,7 +168,9 @@ session_start();
     </div>
     <!-- End Footer -->
 
-    <script src="./assets//js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>
